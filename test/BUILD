@@ -5,7 +5,8 @@ cc_test(
     srcs = ["car-test.cc"],
     copts = ["-Iexternal/gtest/include"],
     deps = [
-        "@gtest//:main",
+        "@gtest//:gtest",
+        "@gtest//:gtest_main",
         "//src/sim:sim"
     ]
 )
