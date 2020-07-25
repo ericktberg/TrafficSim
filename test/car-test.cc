@@ -5,14 +5,14 @@ using namespace TrafficSim;
 
 TEST(SimpleVelocity, StartPositionZeroMeters)
 {
-    CarSim sim;
+    CarSim sim(25);
 
     ASSERT_EQ(0, sim.get_location());
 }
 
 TEST(SimpleVelocity, EvaluateTickMovesCar)
 {
-    CarSim sim;
+    CarSim sim(25);
 
     ASSERT_EQ(25, sim.get_velocity()) << "Initial velocity was incorrect";
 

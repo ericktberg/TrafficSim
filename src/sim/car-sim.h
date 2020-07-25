@@ -3,7 +3,7 @@ namespace TrafficSim
     class CarSim
     {
     public:
-        CarSim(){};
+        CarSim(double initial_velocity);
 
         double get_velocity()
         {
