@@ -24,6 +24,27 @@
             ],
             "preLaunchTask": "",
             "miDebuggerPath": "/usr/bin/gdb"
+        },
+        {
+            "name": "sim-viz",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "/home/ericktberg/Code/TrafficSim/bazel-bin/src/viz/sim-viz.runfiles/__main__/src/viz/sim-viz",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "",
+            "miDebuggerPath": "/usr/bin/gdb"
         }
     ]
 }
